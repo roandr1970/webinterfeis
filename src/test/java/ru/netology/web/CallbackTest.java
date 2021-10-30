@@ -1,10 +1,10 @@
 package ru.netology.web;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import static org.openqa.selenium.By.cssSelector;
 
 class CallbackTest {
@@ -12,9 +12,8 @@ class CallbackTest {
 
     @BeforeAll
     static void setUpAll(){
+        //WebDriverManager.chromedriver().setup();
         System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-        WebDriverManager.chromedriver().setup();
-
     }
 
     @ BeforeEach
